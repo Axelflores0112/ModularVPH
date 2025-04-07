@@ -1,0 +1,341 @@
+/* Ajustes generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navbar personalizado */
+.navbar {
+    background: transparent; /* Fondo semi-transparente */
+    transition: background 0.3s ease-in-out;
+    margin-top: -50px;
+}
+
+.navbar-brand img {
+    width: 100px;
+    height: auto;
+}
+
+/* Efectos en los enlaces de la navbar */
+.navbar-nav .nav-link {
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s ease, transform 0.3s ease;
+    position: relative;
+}
+
+/* Efecto de subrayado al pasar el mouse */
+.navbar-nav .nav-link::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 3px;
+    bottom: -5px;
+    left: 50%;
+    background: rgb(255, 100, 100);
+    transition: width 0.3s ease, left 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+.navbar-nav .nav-link:hover {
+    color: rgb(255, 100, 100);
+    transform: scale(1.1);
+}
+
+/* Contenido principal */
+#main {
+    position: relative;
+    z-index: 2;
+    padding: 50px 20px;
+    color: white;
+    text-align: center;
+}
+
+.section {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    margin: 20px;
+    border-radius: 10px;
+}
+
+#background-video {
+    position: fixed;
+    /* Cambia a fixed para que cubra toda la pantalla */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    /* Asegúrate de que el video esté detrás del contenido principal */
+}
+
+.cardVph {
+    width: 100%;
+    max-width: 840px;
+    max-height: 415px;
+    height: auto;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 4px solid #fff;
+    position: relative;
+    margin: 0 auto;
+}
+
+.cardVph:hover .card-body {
+    right: 0;
+}
+
+.card-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-body {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: -100%;
+    position: absolute;
+    background: rgba(128, 128, 128, 0.162);
+    backdrop-filter: blur(5px);
+    border-radius: 15px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: rgb(0, 0, 0);
+    transition: 2s;
+}
+
+.card-title {
+    text-transform: uppercase;
+    font-size: 50px;
+    font-weight: 500;
+}
+
+.card-sub-title {
+    text-transform: capitalize;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.card-info {
+    font-size: 16px;
+    line-height: 25px;
+    margin: 40px 0;
+    font-weight: 400;
+}
+
+.video video {
+    width: 100%;
+    max-width: 640px;
+    border-radius: 20px;
+}
+
+.consecuncias-container img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
+
+/*card mision y vision*/
+.vision-container, .mision-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+
+.vision-container .col-md-6 img, .mision-container .col-md-6 img {
+    margin-right: 10px; /* Ajusta el margen derecho según tus necesidades */
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.vision-container .col-md-6 .custom-card, .mision-container .col-md-6 .custom-card {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centra el contenido verticalmente */
+    align-items: center; /* Centra el contenido horizontalmente */
+}
+
+.custom-card-mission, .custom-card-vision {
+    width: 100%; /* Ajusta el ancho según tus necesidades */
+    height: 100%; /* Ajusta la altura según tus necesidades */
+    margin: auto; /* Centra la tarjeta horizontalmente */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centra el contenido verticalmente */
+    align-items: center; /* Centra el contenido horizontalmente */
+}
+
+.custom-card-mission, .custom-card-vision .card-text {
+    padding-left: 10px;
+    text-align: center;
+}
+
+.custom-card-mission hr {
+    border: 0;
+    height: 5px;
+    background: #f23535; /* Cambia el color según tus necesidades */
+    margin: 10px 0; /* Ajusta el margen según tus necesidades */
+}
+
+.custom-card-vision hr {
+    border: 0;
+    height: 5px;
+    background: rgb(80, 80, 241); /* Cambia el color según tus necesidades */
+    margin: 10px 0; /* Ajusta el margen según tus necesidades */
+}
+
+#mission .card:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+}
+
+#vision .card:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+}
+
+/*Card us*/
+.container-us {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-us img {
+    width: 100%;
+    max-width: 50%; /* Ajusta el ancho máximo según tus necesidades */
+    height: auto;
+    margin-bottom: 10px; /* Superpone ligeramente la imagen sobre la card */
+    border-radius: 5px;
+}
+
+.custom-card-us {
+    max-width: 50%; /* Ajusta el ancho máximo según tus necesidades */
+    margin: auto; /* Centra la tarjeta horizontalmente */
+    border-radius: 5px;
+    overflow: hidden; /* Asegura que el contenido no se desborde */
+    z-index: 1; /* Asegura que la card esté por encima de otros elementos */
+    position: relative;
+    top: -10px; /* Ajusta la posición vertical de la card */
+}
+
+.custom-card-us hr {
+    border: 0;
+    height: 5px;
+    background: linear-gradient(to right, #e8e400,#e90505, #0225c2); /* Ajusta los colores según los colores de UTEG */
+    margin: 10px 0; /* Ajusta el margen según tus necesidades */
+}
+
+.card-body-us {
+    padding: 20px; /* Ajusta el padding según tus necesidades */
+    text-align: center; /* Centra el texto */
+}
+
+/* Media Queries para diseño responsive */
+@media (max-width: 768px) {
+    #header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #header .links {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-left: 0;
+    }
+
+    #header .links a {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    .card-title {
+        font-size: 30px;
+    }
+
+    .card-sub-title {
+        font-size: 18px;
+    }
+
+    .card-info {
+        font-size: 14px;
+    }
+
+    .mision-container, .vision-container, .container-us {
+        max-width: 100%;
+        padding: 0 15px; /* Ajusta el padding según tus necesidades */
+    }
+
+    .mision-container img, .vision-container img, .container-us img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .mision-container .custom-card, .vision-container .custom-card, .custom-card-us {
+        width: 100%;
+        max-width: 100%;
+        margin: 0 auto; /* Centra la tarjeta horizontalmente */
+    }
+}
+
+@media (min-width: 768px) {
+    .mision-container .col-md-6 img, .vision-container .col-md-6 img {
+        height: 100%; /* Asegura que las imágenes tengan el mismo largo que las tarjetas */
+    }
+
+    .mision-container .custom-card, .vision-container .custom-card {
+        height: auto; /* Ajusta la altura de las tarjetas */
+    }
+}
+
+
+
+@media (max-width: 576px) {
+    .card-title {
+        font-size: 24px;
+    }
+
+    .card-sub-title {
+        font-size: 16px;
+    }
+
+    .card-info {
+        font-size: 12px;
+    }
+
+    .custom-card-us {
+        max-width: 100%;
+    }
+
+    .container-us img {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    .container-us img {
+        max-width: 100%; /* Ajusta el ancho máximo para pantallas pequeñas */
+    }
+
+    .custom-card-us {
+        max-width: 100%; /* Ajusta el ancho máximo para pantallas pequeñas */
+    }
+}

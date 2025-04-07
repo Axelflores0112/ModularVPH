@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="../CSS/vph.css">
+</head>
+<header>
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="../assets/logo.png" alt="Logo" id="logo">
+                </a>
+                <!-- Botón Burger -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Menú colapsable -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#antecedentes">Antecedentes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#tipos">VPH:Tipos y Ciclo de Vida</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#epidemiologia">Epidemiología</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#sintomas">Sintomas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#us">Diagnóstico</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Etiología</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Referencias</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+</header>
+
+<body>
+    <div class="container mt-5" id="antecedentes">
+        <h5 class="text-center text-white card-Title"><b>Antecedentes</b></h5>
+        <div class="card text-dark card-antecedentes">
+            <div class="card-body">
+                <p class="card-text">
+                    El Virus del Papiloma Humano (VPH) es una de las infecciones de transmisión sexual más comunes en el
+                    mundo.
+                    Según la Organización Mundial de la Salud (OMS), se estima que cerca del 80% de las personas
+                    sexualmente
+                    activas se infectarán con este virus en algún momento de sus vidas (OMS, 2022).
+                    El desarrollo de vacunas profilácticas, como las formulaciones bivalente, tetravalente y
+                    nonavalente, ha
+                    sido clave para reducir la incidencia de infecciones por los genotipos más peligrosos del VPH. La
+                    implementación de programas de vacunación masiva ha demostrado su eficacia, logrando una disminución
+                    significativa de las tasas de cáncer cervicouterino y de verrugas genitales (Garland et al., 2016).
+                    A pesar de estos avances, la cobertura vacunal sigue siendo insuficiente en muchas regiones debido a
+                    factores como el acceso desigual a los servicios de salud y la desinformación sobre la seguridad y
+                    eficacia
+                    de la vacuna (Markowitz et al., 2018). Esta situación subraya la importancia de desarrollar
+                    estrategias
+                    educativas innovadoras, como el uso de herramientas digitales, para mejorar el conocimiento y la
+                    aceptación
+                    de la vacuna en adolescentes.
+                </p>
+            </div>
+        </div>
+        <div class="container-img mt-5">
+            <figure class="img text-white">
+                <img src="../assets/harald.jpg" alt="Descripción de la imagen">
+                <figcaption class=" text-center mt-3">Harald zur Hausen</figcaption>
+            </figure>
+            <div class="img2 text-white">
+                <img src="../assets/grafica.jpg" alt="Descripción de la imagen">
+            </div>
+        </div>
+    </div>
+    <div class="container mt-4" id="tipos">
+        <h5 class="text-center text-white card-Title"><b>Tipos y Ciclo de vida</b></h5>
+        <div class="card text-dark card-tipos">
+            <div class="card-body">
+                <p class="card-text">El VPH es un virus ADN de doble cadena perteneciente a la familia Papillomaviridae.
+                    Se han identificado más
+                    de 200 genotipos, de los cuales alrededor de 40 infectan la mucosa anogenital (Muñoz et al., 2006).
+                    Estos se
+                    clasifican en:
+                </p>
+            </div>
+        </div>
+        <div class="cards-riesgo">
+            <div class="card mt-4 text-center card-bajo">
+                <img src="../assets/bajo.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">VPH de bajo riesgo</h5>
+                    <p class="card-text">(tipos 6 y 11), asociados a verrugas genitales benignas.</p>
+                </div>
+            </div>
+            <div class="card mt-4 text-center card-alto">
+                <img src="../assets/alto.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">VPH de alto riesgo</h5>
+                    <p class="card-text">(tipos 16 y 18), responsables de la mayoría de los casos de cáncer
+                        cervicouterino
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="container mt-4 ciclo-container">
+            <div class="card text-dark card-ciclo mt-4">
+                <div class="img-ciclo">
+                    <img src="../assets/ciclo.jpg" alt="Descripción de la imagen">
+                </div>
+                <div class="text-ciclo">
+                    <p class="card-text">
+                        El ciclo de vida del VPH está vinculado a la diferenciación de las células epiteliales del
+                        huésped.
+                        Una vez que el virus infecta las células basales del epitelio, se replica a medida que estas
+                        células
+                        maduran, lo que puede llevar a la formación de lesiones benignas o malignas (Doorbar, 2005).
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-4" id="epidemiologia">
+        <h5 class="text-center text-white card-Title"><b>Epidemiología</b></h5>
+        <div class="card text-dark card-tipos">
+            <div class="card-body">
+                <p class="card-text">El VPH es la causa principal del cáncer cervicouterino, el cual representa la
+                    cuarta causa de muerte por cáncer
+                    en mujeres a nivel mundial (OMS, 2022). Se estima que cada año se diagnostican más de 500,000 casos
+                    nuevos de
+                    cáncer cervicouterino, de los cuales el 99% están relacionados con infecciones persistentes por VPH
+                    (WHO/ICO
+                    Information Centre on HPV and Cancer, 2021).
+                    Además del cáncer, el VPH también es responsable del 90% de los casos de verrugas genitales, una
+                    afección
+                    benigna pero altamente recurrente y molesta, especialmente en adolescentes y adultos jóvenes (Dunne
+                    et al.,
+                    2007). Los programas de vacunación en países como Australia han demostrado reducir la incidencia de
+                    verrugas
+                    genitales en un 90% en mujeres menores de 21 años (Garland et al., 2009).
+                </p>
+            </div>
+        </div>
+        <div class="container-img-est mt-5">
+            <figure class="img text-white">
+                <img src="../assets/estEPI.png" alt="Descripción de la imagen">
+            </figure>
+            <div class="img2 text-white">
+                <img src="../assets/mapaEPI.jpg" alt="Descripción de la imagen">
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-4" id="sintomas">
+        <h5 class="text-center text-white card-Title"><b>Síntomas</b></h5>
+        <div id="carouselExampleCaptions" class="carousel slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <!-- Primera tarjeta -->
+                <div class="carousel-item active">
+                    <div class="card text-dark">
+                        <img src="../assets/sintoma1.jpg" class="card-img-top" alt="Verrugas">
+                        <div class="card-body">
+                            <h5 class="card-title">Verrugas</h5>
+                            <p class="card-text">Las manifestaciones clínicas del VPH varían según el genotipo viral y el
+                                sitio de infección: Verrugas genitales: Lesiones exofíticas que
+                                afectan principalmente la región anogenital y pueden causar prurito o molestias (Graham, 2017).</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Segunda tarjeta -->
+                <div class="carousel-item">
+                    <div class="card text-dark">
+                        <img src="../assets/sintoma2.jpg" class="card-img-top" alt="Lesiones">
+                        <div class="card-body">
+                            <h5 class="card-title">Lesiones</h5>
+                            <p class="card-text">Lesiones cervicales intraepiteliales (CIN): Clasificadas en grados 1, 2 y
+                                3, representan diferentes niveles de displasia que pueden progresar a cáncer si no se tratan
+                                (Solomon et al., 2002).</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Tercera tarjeta -->
+                <div class="carousel-item">
+                    <div class="card text-dark">
+                        <img src="../assets/sintoma3.jpg" class="card-img-top" alt="Cáncer">
+                        <div class="card-body">
+                            <h5 class="card-title">Cáncer</h5>
+                            <p class="card-text">Cáncer relacionado con el VPH: El VPH está asociado con cáncer
+                                cervicouterino, anal, vulvar, vaginal, peneano y orofaríngeo (Chaturvedi et al., 2011).</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

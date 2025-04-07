@@ -1,0 +1,259 @@
+*{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navbar personalizado */
+.navbar {
+    background: transparent; /* Fondo semi-transparente */
+    transition: background 0.3s ease-in-out;
+    margin-top: 0px;
+    text-align: center;
+}
+
+.navbar-brand {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0; /* Elimina márgenes del contenedor */
+    padding: 0; /* Elimina padding del contenedor */
+}
+
+.navbar-brand img {
+    width: 100px;
+    height: auto;
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+/* Efectos en los enlaces de la navbar */
+.navbar-nav .nav-link {
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s ease, transform 0.3s ease;
+    position: relative;
+}
+/* Efecto de subrayado al pasar el mouse */
+.navbar-nav .nav-link::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 3px;
+    bottom: -5px;
+    left: 50%;
+    background: rgb(100, 100, 255);
+    transition: width 0.3s ease, left 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+.navbar-nav .nav-link:hover {
+    color: rgb(178, 100, 255);
+    transform: scale(1.1);
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url("../assets/vphBackground.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100%;
+}
+
+.card-Title {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.card-antecedentes,.card-tipos,.card-ciclo{
+    border-radius: 10px;
+    background: linear-gradient(to bottom, #f0f0f0, #f0f0f0);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+}
+
+.card-antecedentes:hover,.card-tipos:hover,.card-ciclo:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(to bottom, rgb(150, 150, 255), rgb(200, 150, 255));
+}
+
+.container-img,.container-img-est{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 200px;
+}
+
+.container-img img,.container-img-est img {
+    max-width: 400px;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease; /* Transición suave */
+}
+
+.container-img img:hover {
+    transform: rotate(5deg) scale(1.05); /* Rotación y ligero zoom */
+}
+
+
+.container-img-est img:hover{
+    transform: scale(1.05); /* Rotación y ligero zoom */
+}
+
+
+.card-ciclo {
+    display: flex; /* Activa Flexbox para la tarjeta */
+    flex-direction: row; /* Alinea los elementos en fila (horizontal) */
+    align-items: center; /* Alinea los elementos verticalmente */
+    gap: 20px; /* Espacio entre la imagen y el texto */
+    max-width: 800px; /* Ajusta el ancho máximo de la tarjeta */
+    margin: 0 auto; /* Centra la tarjeta horizontalmente */
+    padding: 20px; /* Espaciado interno */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Opcional: sombra para la tarjeta */
+    border-radius: 10px; /* Opcional: bordes redondeados */
+    box-sizing: border-box; /* Incluye el padding en el tamaño total */
+}
+
+.card-ciclo .img-ciclo img {
+    max-width: 500px; /* Ajusta el tamaño máximo de la imagen */
+    height: auto; /* Mantiene la proporción de la imagen */
+    border-radius: 10px; /* Opcional: redondea los bordes */
+}
+
+.card-ciclo .text-ciclo {
+    flex: 1; /* Permite que el texto ocupe el espacio restante */
+    text-align: justify; /* Justifica el texto */
+}
+
+.cards-riesgo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+
+.cards-riesgo .card{
+    flex: 1;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.carousel .card {
+    max-width: 900px; /* Ajusta el ancho máximo de las tarjetas */
+    margin: 0 auto; /* Centra las tarjetas dentro del carrusel */
+    border-radius: 10px; /* Opcional: redondea los bordes */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Opcional: agrega sombra */
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: black; /* Cambia el color de las flechas a negro */
+    border-radius: 50%; /* Opcional: redondea las flechas */
+    width: 40px; /* Ajusta el ancho de las flechas */
+    height: 40px; /* Ajusta la altura de las flechas */
+}
+
+.carousel-control-prev-icon:hover,
+.carousel-control-next-icon:hover {
+    background-color: #333; /* Cambia el color al pasar el mouse (opcional) */
+}
+
+.carousel .card-img-top {
+    height: 450px; /* Ajusta la altura de las imágenes */
+    object-fit: cover; /* Asegura que las imágenes se recorten proporcionalmente */
+    border-radius: 10px 10px 0 0; /* Redondea solo la parte superior */
+}
+/*Medias query para responsive*/
+
+@media (max-width: 768px) {
+    .carousel .card {
+        max-width: 100%; /* Reduce el ancho de las tarjetas */
+        margin: 0 auto; /* Centra las tarjetas */
+    }
+
+    .carousel .card-img-top {
+        height: 200px; /* Reduce la altura de las imágenes */
+    }
+}
+@media (max-width: 995px){
+    .container-img{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .container-img img{
+        max-width: 90%;
+        margin: 0 auto;
+        display: block;
+    }
+}
+@media (max-width: 995px) {
+    .container-img-est {
+        flex-direction: column; /* Cambia la dirección a columna (vertical) */
+        align-items: center; /* Centra las imágenes horizontalmente */
+        gap: 20px; /* Espacio entre las imágenes */
+    }
+
+    .container-img-est img {
+        max-width: 90%; /* Ajusta el tamaño de las imágenes para pantallas pequeñas */
+        margin: 0 auto; /* Centra las imágenes */
+        display: block; /* Asegura que las imágenes se comporten como bloques */
+    }
+}
+@media (max-width: 995px) {
+    .card-ciclo {
+        flex-direction: column; /* Cambia la dirección a columna (vertical) */
+        align-items: center; /* Centra los elementos horizontalmente */
+        text-align: center; /* Opcional: centra el texto */
+    }
+
+    .card-ciclo .img-ciclo {
+        margin-bottom: 20px; /* Agrega espacio entre la imagen y el texto */
+    }
+
+    .card-ciclo .img-ciclo img {
+        max-width: 90%; /* Ajusta el tamaño de la imagen para pantallas pequeñas */
+        height: auto; /* Mantiene la proporción de la imagen */
+    }
+
+    .card-ciclo .text-ciclo {
+        width: 100%; /* Asegura que el texto ocupe todo el ancho disponible */
+        text-align: justify; /* Mantiene el texto justificado */
+    }
+}
+@media (max-width: 955px) {
+    .cards-riesgo {
+        flex-direction: column; /* Cambia la dirección a columna (vertical) */
+        align-items: center; /* Centra las tarjetas horizontalmente */
+        gap: 20px; /* Espacio entre las tarjetas */
+    }
+
+    .cards-riesgo .card {
+        max-width: 90%; /* Ajusta el ancho de las tarjetas para pantallas pequeñas */
+    }
+}

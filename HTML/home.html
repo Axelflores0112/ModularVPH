@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="../CSS/home.css">
+    <title>VPH</title>
+</head>
+
+<body>
+    <div class="container-fluid" id="main">
+        <video autoplay muted loop id="background-video">
+            <source src="../assets/vphBackground.mp4" type="video/mp4">
+        </video>
+        <nav class="navbar navbar-expand-md navbar-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="../assets/logo.png" alt="Logo" id="logo">
+                </a>
+                <!-- Botón Burger -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <!-- Menú colapsable -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#introduccion">Introduccion</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#mission">Mision</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#vision">Vision</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../HTML/VPH.html">VPH</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#us">Quienes somos?</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Quiz</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Bibliografia</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="row mt-5 justify-content-center">
+            <div class="col-md-8">
+                <div class="cardVph mx-auto">
+                    <img src="../assets/img1.jpg" id="card-img">
+                    <div class="card-body">
+                        <h1 class="card-title">Introduccion</h1>
+                        <p class="card-sub-title">¿Que es el VPH?</p>
+                        <p class="card-info">El Virus del Papiloma Humano (VPH) es una de las infecciones de transmisión
+                            sexual
+                            más comunes en el mundo. Existen más de 200 tipos de VPH, de los cuales algunos pueden
+                            causar
+                            verrugas genitales y otros están estrechamente relacionados con distintos tipos de cáncer,
+                            como el
+                            cáncer de cuello uterino, anal, orofaríngeo, entre otros.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12 mt-3">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="video">
+                            <video controls>
+                                <source src="../assets/complementario.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <h2 class="consecuencias-title text-center text-white">Conesecuencias VPH</h2>
+                        <div class="consecuncias-container">
+                            <img src="../assets/consecuencias.png" alt="Consecuencias" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mision-container mt-5" id="mission">
+            <div class="row g-0">
+                <div class="col-md-6">
+                    <img src="../assets/mision2.jpg" class="img-fluid" alt="Mision Image">
+                </div>
+                <div class="col-md-6">
+                    <div class="card custom-card-mission" id="mision-card">
+                        <div class="card-mission-body p-3">
+                            <h5 class="card-title text-center">Nuestra Misión</h5>
+                            <hr>
+                            <p class="card-text">Desarrollar una plataforma educativa que compile artículos,
+                                investigaciones y guías clínicas, con el objetivo de crear un sitio web informativo que
+                                ofrezca datos concisos y útiles sobre la importancia que tiene la vacunación temprana
+                                ante el VPH. Así como también se Busca fomentar la educación sobre este tema y
+                                sensibilizar a la sociedad acerca de esta enfermedad de transmisión sexual, combatiendo
+                                la desinformación existente y ayudando a la comunidad a tener una perspectiva más amplia
+                                sobre este problema que afecta a toda la población.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="vision-container mt-5" id="vision">
+            <div class="row g-0">
+                <div class="col-md-6">
+                    <img src="../assets/vision2.jpg" class="img-fluid" alt="Mision Image" style="border-radius: 5px;">
+                </div>
+                <div class="col-md-6">
+                    <div class="card custom-card-vision" id="mision-card">
+                        <div class="card-mission-body p-3">
+                            <h5 class="card-title text-center">Vision</h5>
+                            <hr>
+                            <p class="card-text"> Crear una plataforma educativa y de divulgación enfocada en la
+                                Importancia de la vacunación ante el VPH, así como informar de manera sencilla y fácil
+                                de entender, también se busca capacitar a estudiantes, profesionales y cualquier persona
+                                interesada, para proporcionarles las herramientas adecuadas sobre la enfermedad de
+                                transmisión sexual a través de el sitio web.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="container-us mt-5" id="us">
+            <img src="../assets/us.jpg" class="card-img-top" alt="Nueva Imagen">
+            <div class="card custom-card-us">
+                <div class="card-body-us">
+                    <h5 class="card-title text-center">¿Quienes somos?</h5>
+                    <hr>
+                    <p class="card-text">Somos estudiantes de la carrera de Químico Farmacéutico Biólogo de la
+                        Universidad
+                        UTEG,cursando el 9no semestre de la carrera, unidos por nuestra pasión y perseverancia por la
+                        divulgar ciencia. En este portal ofrecemos datos y recursos sobre la Importancia de la
+                        vacunación
+                        ante el VPH a temprana edad, abordando temas como edades recomendadas para la vacunación,
+                        diagnósticos, características del virus, consecuencias de la falta de vacunación, síntomas y
+                        aspectos epidemiológicos, entre otros aspectos generales. Gracias por tu visita.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
