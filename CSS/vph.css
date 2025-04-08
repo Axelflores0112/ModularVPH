@@ -186,7 +186,66 @@ body{
     object-fit: cover; /* Asegura que las imágenes se recorten proporcionalmente */
     border-radius: 10px 10px 0 0; /* Redondea solo la parte superior */
 }
+
+.cards-diagnosticos {
+    display: flex;
+    flex-wrap: wrap; /* Permite que las tarjetas se ajusten en varias filas si es necesario */
+    justify-content: center; /* Centra las tarjetas horizontalmente */
+    gap: 50px; /* Espacio entre las tarjetas */
+}
+
+.cards-diagnosticos .card {
+    flex: 1 1 calc(50% - 20px); /* Ajusta el ancho de las tarjetas (25% del contenedor menos el espacio del gap) */
+    max-width: 400px; /* Ancho máximo de las tarjetas */
+    min-height: 400px; /* Altura mínima para que todas las tarjetas tengan el mismo tamaño */
+    display: flex;
+    flex-direction: column; /* Asegura que el contenido interno esté alineado verticalmente */
+    justify-content: space-between; /* Distribuye el contenido de manera uniforme */
+    text-align: center;
+    padding: 15px; /* Espaciado interno */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra opcional */
+    border-radius: 10px; /* Bordes redondeados */
+    background: #fff; /* Fondo blanco */
+}
+
+.cards-diagnosticos .card-img-top {
+    width: 100%; /* Asegura que las imágenes ocupen todo el ancho de la tarjeta */
+    height: 200px; /* Establece una altura fija para todas las imágenes */
+    object-fit: cover; /* Recorta la imagen para que se ajuste al contenedor sin deformarse */
+    border-radius: 10px 10px 0 0; /* Opcional: redondea solo la parte superior de las imágenes */
+}
+
+.cards-diagnosticos .card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición suave para el efecto */
+}
+
+.cards-diagnosticos .card:hover {
+    transform: scale(1.05); /* Aumenta el tamaño de la tarjeta al 105% */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Agrega una sombra más pronunciada */
+    background: linear-gradient(to bottom, rgb(150, 150, 255), rgb(200, 150, 255));
+}
 /*Medias query para responsive*/
+
+@media (max-width: 992px) {
+    .cards-diagnosticos .card {
+        flex: 1 1 100%; /* Las tarjetas ocuparán el 100% del ancho */
+        max-width: 100%; /* Asegura que no haya un límite de ancho */
+    }
+}
+
+@media (max-width: 768px) {
+    .cards-diagnosticos .card {
+        flex: 1 1 calc(50% - 20px); /* Las tarjetas ocuparán el 50% del ancho en pantallas medianas */
+        min-height: 300px; /* Reduce la altura mínima en pantallas pequeñas */
+    }
+}
+
+@media (max-width: 576px) {
+    .cards-diagnosticos .card {
+        flex: 1 1 100%; /* Las tarjetas ocuparán el 100% del ancho en pantallas pequeñas */
+        min-height: auto; /* Permite que la altura sea automática en pantallas muy pequeñas */
+    }
+}
 
 @media (max-width: 768px) {
     .carousel .card {
