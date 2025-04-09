@@ -1,0 +1,142 @@
+*{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navbar personalizado */
+.navbar {
+    background: transparent; /* Fondo semi-transparente */
+    transition: background 0.3s ease-in-out;
+    margin-top: 0px;
+    text-align: center;
+}
+
+.navbar-brand {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0; /* Elimina márgenes del contenedor */
+    padding: 0; /* Elimina padding del contenedor */
+}
+
+.navbar-brand img {
+    width: 100px;
+    height: auto;
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+/* Efectos en los enlaces de la navbar */
+.navbar-nav .nav-link {
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s ease, transform 0.3s ease;
+    position: relative;
+}
+/* Efecto de subrayado al pasar el mouse */
+.navbar-nav .nav-link::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 3px;
+    bottom: -5px;
+    left: 50%;
+    background: rgb(100, 100, 255);
+    transition: width 0.3s ease, left 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+.navbar-nav .nav-link:hover {
+    color: rgb(178, 100, 255);
+    transform: scale(1.1);
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url("../assets/vphBackground.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100%;
+}
+
+.container {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+}
+
+.card-quiz{
+    padding: 15px;
+    max-width: 700px;
+    width: 100%; /* Asegura que ocupe el ancho máximo permitido */
+    height: 450px; /* Altura fija */
+    overflow: auto; /* Agrega scroll si el contenido excede el tamaño */
+    display: flex;
+    flex-direction: column; /* Asegura que los elementos internos se apilen verticalmente */
+    justify-content: space-between; /* Espacia los elementos internos */
+}
+
+.next-button {
+    max-width: 300px; /* Ancho máximo */
+    width: 100%; /* Asegura que ocupe el ancho máximo permitido */
+}
+
+.card-quiz hr{
+    border: 0;
+    height: 3px; /* Grosor de la línea */
+    background: #6a11cb; /* Color sólido */
+    width: 95%; /* Ajusta el ancho al 50% del contenedor */
+    margin: 20px auto; /* Centra la línea horizontalmente */
+}
+
+.quiz-option {
+    background: #f0f0f0; /* Fondo inicial */
+    color: #333; /* Color del texto inicial */
+    padding: 10px 20px; /* Espaciado interno */
+    margin: 10px 0; /* Espaciado entre opciones */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar el mouse */
+    transition: background 0.3s ease, color 0.3s ease; /* Transición suave */
+    text-align: center; /* Centra el texto */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para destacar */
+}
+
+.quiz-option:hover {
+    background: #000; /* Fondo negro al pasar el mouse */
+    color: #fff; /* Texto blanco al pasar el mouse */
+    transform: scale(1.05); /* Aumenta ligeramente el tamaño */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada */
+}
+
+.quiz-option.correct {
+    background-color: #d4edda; /* Verde pastel */
+    color: #155724; /* Texto verde oscuro */
+    border: 1px solid #c3e6cb; /* Borde verde claro */
+}
+
+.quiz-option.incorrect {
+    background-color: #f8d7da; /* Rojo pastel */
+    color: #721c24; /* Texto rojo oscuro */
+    border: 1px solid #f5c6cb; /* Borde rojo claro */
+}

@@ -20,6 +20,66 @@ body{
     height: 100%;
 }
 
+/* Navbar personalizado */
+.navbar {
+    background: transparent; /* Fondo semi-transparente */
+    transition: background 0.3s ease-in-out;
+    margin-top: 0px;
+    text-align: center;
+}
+
+.navbar-brand {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0; /* Elimina márgenes del contenedor */
+    padding: 0; /* Elimina padding del contenedor */
+}
+
+.navbar-brand img {
+    width: 100px;
+    height: auto;
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+/* Efectos en los enlaces de la navbar */
+.navbar-nav .nav-link {
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s ease, transform 0.3s ease;
+    position: relative;
+}
+/* Efecto de subrayado al pasar el mouse */
+.navbar-nav .nav-link::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 3px;
+    bottom: -5px;
+    left: 50%;
+    background: rgb(100, 100, 255);
+    transition: width 0.3s ease, left 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+.navbar-nav .nav-link:hover {
+    color: rgb(178, 100, 255);
+    transform: scale(1.1);
+}
+
 .card-Title {
     font-size: 24px;
     cursor: pointer;
