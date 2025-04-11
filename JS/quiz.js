@@ -134,13 +134,16 @@ function loadQuestion() {
 
         // Agrega evento de clic a cada opción
         optionDiv.addEventListener("click", () => {
-            // Limpia clases anteriores
-            document.querySelectorAll(".quiz-option").forEach(opt => opt.classList.remove("correct", "incorrect"));
+            // Deshabilita todas las opciones después de seleccionar una
+            document.querySelectorAll(".quiz-option").forEach(opt => {
+                opt.classList.add("disabled");
+                opt.style.pointerEvents = "none"; // Desactiva los clics
+            });
 
             // Verifica si es correcta
             if (index === currentData.correct) {
                 optionDiv.classList.add("correct");
-                score++; // Incrementa la puntuación
+                score++; // Incrementa la puntuación solo una vez
             } else {
                 optionDiv.classList.add("incorrect");
             }

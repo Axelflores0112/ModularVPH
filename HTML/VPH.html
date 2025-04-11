@@ -29,7 +29,7 @@
                             <a class="nav-link" href="#antecedentes">Antecedentes</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#tipos">VPH:Tipos y Ciclo de Vida</a>
+                            <a class="nav-link" href="#tipos">Tipos y Ciclo de Vida</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#epidemiologia">Epidemiología</a>
@@ -42,6 +42,21 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#etiologia">Etiología</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#tiposCancer">Cancer relacionado con VPH</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#prevencion">Prevencion y tramientos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#vacunas">Vacunas contra VPH</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#impacto">Impacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../HTML/Glosario.html">Glosario</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="../HTML/Referencias.html">Referencias</a>
@@ -59,24 +74,23 @@
         <div class="card text-dark card-antecedentes">
             <div class="card-body">
                 <p class="card-text">
-                    El Virus del Papiloma Humano (VPH) es una de las infecciones de transmisión sexual más comunes en el
-                    mundo.
-                    Según la Organización Mundial de la Salud (OMS), se estima que cerca del 80% de las personas
-                    sexualmente
-                    activas se infectarán con este virus en algún momento de sus vidas (OMS, 2022).
-                    El desarrollo de vacunas profilácticas, como las formulaciones bivalente, tetravalente y
-                    nonavalente, ha
-                    sido clave para reducir la incidencia de infecciones por los genotipos más peligrosos del VPH. La
-                    implementación de programas de vacunación masiva ha demostrado su eficacia, logrando una disminución
-                    significativa de las tasas de cáncer cervicouterino y de verrugas genitales (Garland et al., 2016).
+                    El Virus del Papiloma Humano (VPH) es una de las infecciones de transmisión sexual más comunes en
+                    el mundo. Según la Organización Mundial de la Salud (OMS), se estima que cerca del 80% de las
+                    personas sexualmente activas se infectarán con este virus en algún momento de sus vidas (OMS,
+                    2022).
+                    El desarrollo de vacunas profilácticas, como las formulaciones bivalentes, tetravalentes y
+                    nonavalentes,
+                    han sido clave para reducir la incidencia de infecciones por los genotipos más peligrosos del VPH.
+                    La
+                    implementación de programas de vacunación masiva ha demostrado su eficacia, logrando una
+                    disminución significativa de las tasas de cáncer cervicouterino y de verrugas genitales (Garland et
+                    al.,
+                    2016).
                     A pesar de estos avances, la cobertura vacunal sigue siendo insuficiente en muchas regiones debido a
                     factores como el acceso desigual a los servicios de salud y la desinformación sobre la seguridad y
-                    eficacia
-                    de la vacuna (Markowitz et al., 2018). Esta situación subraya la importancia de desarrollar
-                    estrategias
-                    educativas innovadoras, como el uso de herramientas digitales, para mejorar el conocimiento y la
-                    aceptación
-                    de la vacuna en adolescentes.
+                    eficacia de la vacuna (Markowitz et al., 2018). Esta situación subraya la importancia de desarrollar
+                    estrategias educativas innovadoras, como el uso de herramientas digitales, para mejorar el
+                    conocimiento y la aceptación de la vacuna en adolescentes.
                 </p>
             </div>
         </div>
@@ -90,40 +104,74 @@
             </div>
         </div>
     </div>
+
     <div class="container mt-4" id="tipos">
-        <h5 class="text-center text-white card-Title"><b>Tipos y Ciclo de vida</b></h5>
+        <h5 class="text-center text-white card-Title"><b>Tipos y Ciclo de Vida</b></h5>
+
+        <!-- Primera tarjeta: Introducción -->
         <div class="card text-dark card-tipos">
             <div class="card-body">
-                <p class="card-text">El VPH es un virus ADN de doble cadena perteneciente a la familia Papillomaviridae.
-                    Se han identificado más
-                    de 200 genotipos, de los cuales alrededor de 40 infectan la mucosa anogenital (Muñoz et al., 2006).
-                    Estos se
-                    clasifican en:
+                <p class="card-text">
+                    El VPH es un virus ADN de doble cadena perteneciente a la familia Papillomaviridae.
+                    Se han identificado más de 200 genotipos, de los cuales alrededor de 40 infectan la mucosa
+                    anogenital (Muñoz et al., 2006).
+                    Estos se clasifican en:
                 </p>
             </div>
         </div>
-        <div class="cards-riesgo">
+
+        <!-- Tarjetas de riesgo -->
+        <div class="cards-riesgo" id="card-tipos">
+            <!-- Tarjeta de bajo riesgo -->
             <div class="card mt-4 text-center card-bajo">
-                <img src="../assets/bajo.jpg" class="card-img-top" alt="...">
+                <img src="../assets/bajo.jpg" class="card-img-top" alt="VPH de bajo riesgo">
                 <div class="card-body">
-                    <h5 class="card-title">VPH de bajo riesgo</h5>
-                    <p class="card-text">(tipos 6 y 11), asociados a verrugas genitales benignas.</p>
+                    <h5 class="card-title"><b>VPH de bajo riesgo</b></h5>
+                    <p class="card-text">
+                        (tipos 6 y 11), asociados a verrugas genitales benignas.
+                        <hr>
+                        Los genotipos 40, 42, 43, 44, 54, 61, 70, 72 y 81 son considerados de bajo riesgo y se asocian
+                        principalmente con lesiones benignas como verrugas anogenitales o papilomas orales. Estas
+                        infecciones suelen ser transitorias y afectan con mayor frecuencia a adolescentes y adultos
+                        jóvenes con vida sexual activa (de Villiers et al., 2004).
+                    </p>
                 </div>
             </div>
+
+            <!-- Tarjeta de alto riesgo -->
             <div class="card mt-4 text-center card-alto">
-                <img src="../assets/alto.jpg" class="card-img-top" alt="...">
+                <img src="../assets/alto.jpg" class="card-img-top" alt="VPH de alto riesgo">
                 <div class="card-body">
-                    <h5 class="card-title">VPH de alto riesgo</h5>
-                    <p class="card-text">(tipos 16 y 18), responsables de la mayoría de los casos de cáncer
-                        cervicouterino
+                    <h5 class="card-title"><b>VPH de alto riesgo</b></h5>
+                    <p class="card-text">
+                        (tipos 16 y 18), responsables de la mayoría de los casos de cáncer cervicouterino.
+                        <hr>
+                        Además, los tipos 31, 33, 45, 52 y 58 están incluidos en la vacuna nonavalente debido a su
+                        asociación significativa con lesiones intraepiteliales de alto grado y cáncer cervicouterino.
+                        Otros tipos como 35, 39, 51, 56, 59, 66 y 68 también se consideran de riesgo intermedio a alto
+                        (Clifford et al., 2005).
                     </p>
                 </div>
             </div>
         </div>
+
+        <!-- Tarjeta adicional -->
+        <div class="card text-dark card-tipos mt-4">
+            <div class="card-body">
+                <p class="card-text">
+                    Además de los tipos 6, 11, 16 y 18, que son los más estudiados por su relación directa con verrugas
+                    genitales y cáncer cervicouterino, existen otros genotipos del VPH que también representan un riesgo
+                    para la salud, especialmente entre adolescentes y jóvenes. Estos pueden dividirse en categorías de
+                    acuerdo con su potencial oncogénico (Clifford et al., 2005).
+                </p>
+            </div>
+        </div>
+
+        <!-- Tarjeta del ciclo de vida -->
         <div class="container mt-4 ciclo-container">
             <div class="card text-dark card-ciclo mt-4">
                 <div class="img-ciclo">
-                    <img src="../assets/ciclo.jpg" alt="Descripción de la imagen">
+                    <img src="../assets/ciclo.jpg" alt="Ciclo de vida del VPH">
                 </div>
                 <div class="text-ciclo">
                     <p class="card-text">
@@ -140,22 +188,29 @@
 
     <div class="container mt-4" id="epidemiologia">
         <h5 class="text-center text-white card-Title"><b>Epidemiología</b></h5>
-        <div class="card text-dark card-tipos">
+        <div class="card text-dark card-tipos mt-4">
             <div class="card-body">
                 <p class="card-text">El VPH es la causa principal del cáncer cervicouterino, el cual representa la
-                    cuarta causa de muerte por cáncer
-                    en mujeres a nivel mundial (OMS, 2022). Se estima que cada año se diagnostican más de 500,000 casos
-                    nuevos de
-                    cáncer cervicouterino, de los cuales el 99% están relacionados con infecciones persistentes por VPH
-                    (WHO/ICO
-                    Information Centre on HPV and Cancer, 2021).
+                    cuarta causa de muerte
+                    por cáncer en mujeres a nivel mundial (OMS, 2022). Se estima que cada año se diagnostican más de
+                    500,000 casos nuevos de cáncer cervicouterino, de los cuales el 99% están relacionados con
+                    infecciones persistentes por VPH (WHO/ICO Information Centre on HPV and Cancer, 2021).
                     Además del cáncer, el VPH también es responsable del 90% de los casos de verrugas genitales, una
-                    afección
-                    benigna pero altamente recurrente y molesta, especialmente en adolescentes y adultos jóvenes (Dunne
-                    et al.,
-                    2007). Los programas de vacunación en países como Australia han demostrado reducir la incidencia de
-                    verrugas
-                    genitales en un 90% en mujeres menores de 21 años (Garland et al., 2009).
+                    afección benigna pero altamente recurrente y molesta, especialmente en adolescentes y adultos
+                    jóvenes (Dunne et al., 2007). Los programas de vacunación en países como Australia han demostrado
+                    reducir la incidencia de verrugas genitales en un 90% en mujeres menores de 21 años (Garland et al.,
+                    2009).
+                    Mientras México se encuentra en un nivel mínimo en la cobertura de vacunación contra el Virus del
+                    Papiloma Humano (VPH), los casos de uno de los padecimientos que este biológico previene, el cáncer
+                    cervicouterino, han alcanzado este año (2022) una de las cifras más elevadas de la última década.
+                    Con apenas 0.5 por ciento de cobertura, el país se ubica en el último lugar de protección contra VPH
+                    en la región de las Américas, según datos de la Organización Mundial de la Salud (OMS).
+                    En su reporte, el organismo internacional también apunta que dicho porcentaje de cobertura sólo se
+                    refiere a la población de sexo femenino, es decir, que el masculino no cuenta con protección,
+                    mientras
+                    que países como Canadá, Brasil, Chile, Uruguay o Guayana brindan el biológico tanto a mujeres como
+                    a hombres; para el caso de ellos, con coberturas de 2.5 hasta 73 por ciento.
+
                 </p>
             </div>
         </div>
@@ -165,6 +220,28 @@
             </figure>
             <div class="img2 text-white">
                 <img src="../assets/mapaEPI.jpg" alt="Descripción de la imagen">
+            </div>
+        </div>
+        <div class="card text-dark card-tipos mt-4">
+            <div class="card-body">
+                <p class="card-text">Pero el número no supera únicamente a los registros del mismo lapso, sino hasta del
+                    acumulado anual
+                    de 2013, 2014, 2015, 2017, 2020 y el preliminar de 2021, en el que se identificaron dos mil 950
+                    casos.
+                    (Yuliana Bonilla, La razón, 2022)
+                    Hasta ahora, el 2016 es el año en el que se han detectado más cánceres de cuello uterino: tres mil
+                    525;
+                    seguido por 2019, con tres mil 479, y el 2018, con tres mil 286 casos. (Yuliana Bonilla, La razón,
+                    2022)
+                    A pesar de que este cáncer tiene también como causas el tabaquismo o infecciones genitales, como
+                    clamidia, la infección por VPH es la principal. (Yuliana Bonilla, La razón, 2022)
+                    Según los últimos datos disponibles hasta la penúltima semana de octubre, en México se han
+                    documentado en el año 12 mil 908 casos de esta infección, de los cuales, mil 421 son en personas del
+                    sexo masculino y 11 mil 487 en el femenino. (Yuliana Bonilla, La razón, 2022)
+                    A pesar de que estos números también rebasan al 2020, año en el que comenzó la pandemia, aún se
+                    encuentran 40.8 por ciento por debajo de los 21 mil 832 casos de infección por VPH observados en el
+                    2019. (Yuliana Bonilla, La razón, 2022)
+                </p>
             </div>
         </div>
     </div>
@@ -179,6 +256,8 @@
                     aria-label="Slide 2"></button>
                 <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
                     aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+                    aria-label="Slide 4"></button>
             </div>
             <div class="carousel-inner">
                 <!-- Primera tarjeta -->
@@ -186,12 +265,9 @@
                     <div class="card text-dark">
                         <img src="../assets/sintoma1.jpg" class="card-img-top" alt="Verrugas">
                         <div class="card-body">
-                            <h5 class="card-title">Verrugas</h5>
-                            <p class="card-text">Las manifestaciones clínicas del VPH varían según el genotipo viral y
-                                el
-                                sitio de infección: Verrugas genitales: Lesiones exofíticas que
-                                afectan principalmente la región anogenital y pueden causar prurito o molestias (Graham,
-                                2017).</p>
+                            <h5 class="card-title text-center"><b>Verrugas</b></h5>
+                            <p class="card-text"> Lesiones exofíticas que afectan principalmente
+                                la región anogenital y pueden causar prurito o molestias físicas (Graham, 2017).</p>
                         </div>
                     </div>
                 </div>
@@ -200,12 +276,10 @@
                     <div class="card text-dark">
                         <img src="../assets/sintoma2.jpg" class="card-img-top" alt="Lesiones">
                         <div class="card-body">
-                            <h5 class="card-title">Lesiones</h5>
-                            <p class="card-text">Lesiones cervicales intraepiteliales (CIN): Clasificadas en grados 1, 2
-                                y
-                                3, representan diferentes niveles de displasia que pueden progresar a cáncer si no se
-                                tratan
-                                (Solomon et al., 2002).</p>
+                            <h5 class="card-title text-center"><b>Lesiones</b></h5>
+                            <p class="card-text">Clasificadas en grados 1, 2 y 3, representan
+                                diferentes niveles de displasia que pueden progresar a cáncer si no se tratan (Solomon
+                                et al., 2002).</p>
                         </div>
                     </div>
                 </div>
@@ -214,9 +288,24 @@
                     <div class="card text-dark">
                         <img src="../assets/sintoma3.jpg" class="card-img-top" alt="Cáncer">
                         <div class="card-body">
-                            <h5 class="card-title">Cáncer</h5>
-                            <p class="card-text">Cáncer relacionado con el VPH: El VPH está asociado con cáncer
-                                cervicouterino, anal, vulvar, vaginal, peneano y orofaríngeo (Chaturvedi et al., 2011).
+                            <h5 class="card-title text-center"><b>Cáncer</b></h5>
+                            <p class="card-text">El VPH está asociado con cáncer cervicouterino, anal, vulvar,
+                                vaginal, peneano y orofaríngeo (Chaturvedi et al., 2011).</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Cuarta tarjeta -->
+                <div class="carousel-item">
+                    <div class="card text-dark">
+                        <img src="../assets/sintoma4.jpg" class="card-img-top" alt="Síntomas adicionales">
+                        <div class="card-body">
+                            <p class="card-text">
+                            <h5 class="card-title"><b>Otros sintomas</b></h5>
+                            Verrugas en forma de coliflor en o alrededor de los genitales y el ano,
+                            Cambios en el color o grosor de la piel de la vulva,
+                            Dolor crónico (que dura más de 3 meses), picazón o la aparición de un bulto en la vulva,
+                            Masas inusuales,
+                            Llagas.
                             </p>
                         </div>
                     </div>
@@ -241,7 +330,8 @@
             <div class="card mt-4 text-center card-bajo">
                 <img src="../assets/examen.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
-                    <h5 class="card-title">Examen físico y observación clínica</h5>
+                    <h5 class="card-title"><b>Examen físico y observación clínica</b></h5>
+                    <hr>
                     <p class="card-text"> Es la primera herramienta diagnóstica utilizada, especialmente útil para
                         identificar lesiones visibles como las verrugas genitales (condilomas acuminados). Estas suelen
                         aparecer en la región anogenital y pueden variar en forma, tamaño y número. Sin embargo, la
@@ -252,7 +342,8 @@
             <div class="card mt-4 text-center card-bajo">
                 <img src="../assets/papa.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
-                    <h5 class="card-title">Prueba de Papanicolaou</h5>
+                    <h5 class="card-title"><b>Prueba de Papanicolaou</b></h5>
+                    <hr>
                     <p class="card-text"> Esta prueba detecta alteraciones morfológicas en las células del cuello
                         uterino, causadas en muchos casos por la infección persistente por VPH. Es una herramienta
                         fundamental en la prevención y detección temprana del cáncer cervicouterino. Su sensibilidad
@@ -262,7 +353,8 @@
             <div class="card mt-4 text-center card-bajo">
                 <img src="../assets/vph-adn.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
-                    <h5 class="card-title">Prueba de ADN del VPH</h5>
+                    <h5 class="card-title"><b>Prueba de ADN del VPH</b></h5>
+                    <hr>
                     <p class="card-text"> Esta técnica permite identificar la presencia del ADN viral en muestras del
                         cuello uterino, así como determinar el genotipo específico del VPH, especialmente los de alto
                         riesgo oncogénico como los tipos 16 y 18. Se recomienda particularmente en mujeres mayores de 30
@@ -273,7 +365,8 @@
             <div class="card mt-4 text-center card-bajo">
                 <img src="../assets/biopsa.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
-                    <h5 class="card-title">Biopsa</h5>
+                    <h5 class="card-title"><b>Biopsa</b></h5>
+                    <hr>
                     <p class="card-text">En casos donde se observan lesiones sospechosas durante la colposcopia o examen
                         físico, se realiza una biopsia para obtener un diagnóstico histopatológico definitivo. Esta
                         permite evaluar la gravedad de las lesiones (como displasias cervicales o carcinoma in situ) y
@@ -306,7 +399,170 @@
             </div>
         </div>
     </div>
+    <div class="container mt-4" id="tiposCancer">
+        <h5 class="text-center text-white card-Title"><b>Tipos de cáncer relacionados con el VPH</b></h5>
+        <div class="card text-dark card-tipos mt-4">
+            <div class="card-body">
+                <p class="card-text">Pero el número no supera únicamente a los registros del mismo lapso, sino hasta del
+                    acumulado anual
+                    de 2013, 2014, 2015, 2017, 2020 y el preliminar de 2021, en el que se identificaron dos mil 950
+                    casos.
+                    (Yuliana Bonilla, La razón, 2022)
+                    Hasta ahora, el 2016 es el año en el que se han detectado más cánceres de cuello uterino: tres mil
+                    525;
+                    seguido por 2019, con tres mil 479, y el 2018, con tres mil 286 casos. (Yuliana Bonilla, La razón,
+                    2022)
+                    A pesar de que este cáncer tiene también como causas el tabaquismo o infecciones genitales, como
+                    clamidia, la infección por VPH es la principal. (Yuliana Bonilla, La razón, 2022)
+                    Según los últimos datos disponibles hasta la penúltima semana de octubre, en México se han
+                    documentado en el año 12 mil 908 casos de esta infección, de los cuales, mil 421 son en personas del
+                    sexo masculino y 11 mil 487 en el femenino. (Yuliana Bonilla, La razón, 2022)
+                    A pesar de que estos números también rebasan al 2020, año en el que comenzó la pandemia, aún se
+                    encuentran 40.8 por ciento por debajo de los 21 mil 832 casos de infección por VPH observados en el
+                    2019. (Yuliana Bonilla, La razón, 2022)
+                </p>
+            </div>
+        </div>
+        <div class="container mt-4 cancerVPH" id="cancerVPH">
+            <div class="row justify-content-center">
+                <!-- Card 1 -->
+                <div class="col-md-4">
+                    <div class="card text-dark">
+                        <img src="../assets/cancerCervical.jpg" class="card-img-top" alt="Cáncer 1">
+                        <div class="card-body">
+                            <h5 class="card-title"><b>Cáncer cervical</b></h5>
+                            <hr>
+                            <p class="card-text">El VPH es responsable de aproximadamente el 99% de los
+                                casos de cáncer cervical, especialmente los tipos 16 y 18. Esta es la forma más común de
+                                cáncer relacionado con el VPH.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="col-md-4">
+                    <div class="card text-dark">
+                        <img src="../assets/canncerGarganta.jpeg" class="card-img-top" alt="Cáncer 2">
+                        <div class="card-body">
+                            <h5 class="card-title"><b>Cáncer de cabeza y cuello</b></h5>
+                            <hr>
+                            <p class="card-text">El VPH también está vinculado al cáncer de las
+                                amígdalas, la base de la lengua y otras áreas de la garganta. El VPH tipo 16 es el
+                                principal
+                                responsable de estos cánceres.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="col-md-4">
+                    <div class="card text-dark">
+                        <img src="../assets/cancerAnal.jpg" class="card-img-top" alt="Cáncer 3">
+                        <div class="card-body">
+                            <h5 class="card-title"><b>Cáncer anal y genital</b></h5>
+                            <hr>
+                            <p class="card-text">El VPH de alto riesgo también puede causar cáncer anal, así como
+                                cáncer de pene, vulva y vagina.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
+    <div class="container mt-4 tratamientoVPH" id="prevencion">
+        <h5 class="text-center text-white card-Title"><b>Prevencion y Tratamientos</b></h5>
+        <div class="card text-dark card-tipos mt-4">
+            <div class="card-body">
+                <h5 class="card-title text-center"><b>Prevencion</b></h5>
+                <p class="card-text">La vacuna contra el VPH es una de las estrategias más efectivas para prevenir los
+                    cánceres causados por este virus. La vacuna protege contra los tipos más comunes
+                    de VPH de alto riesgo (principalmente los tipos 16, 18, 6 y 11). La vacunación
+                    temprana, antes del inicio de la actividad sexual, ofrece la máxima protección.
+                </p>
+            </div>
+        </div>
+        <div class="card text-dark card-tipos mt-4">
+            <div class="card-body">
+                <h5 class="card-title text-center"><b>Tratamientos</b></h5>
+                <p class="card-text">Actualmente, no existe un tratamiento para eliminar el VPH . Sin embargo, existen
+                    tratamientos para las verrugas genitales (cremas, crioterapia o cirugía) y para las
+                    lesiones precancerosas (como en cuello uterino, que pueden ser tratadas con
+                    procedimientos quirúrgicos).
+                    Las infecciones por VPH de bajo riesgo (causan verrugas) generalmente se resuelven
+                    por sí solas sin tratamiento.
+                </p>
+            </div>
+        </div>
+        <div class="container img-tratamiento d-flex justify-content-center flex-wrap mt-4">
+            <img src="../assets/vacunas.jpg" class="img-fluid" alt="Vacunas">
+            <img src="../assets/tratamiento.jpg" class="img-fluid" alt="Tratamiento">
+        </div>
+    </div>
+
+    <div class="container mt-4 vacunasVPH" id="vacunas">
+        <h5 class="text-center text-white card-Title"><b>Mecanismo de accion de vacunas contra VPH</b></h5>
+        <div class="card text-dark card-tipos mt-4">
+            <div class="card-body">
+                <p class="card-text">Las vacunas contra el VPH contienen proteínas del virus llamadas proteínas L1, que
+                    forman una parte de la cápside (envoltura externa) del VPH. Estas proteínas no son
+                    infecciosas por sí solas, ya que no contienen material genético viral, solo las proteínas
+                    necesarias para que el sistema inmune las reconozca.
+                    L1 es la proteína principal de la cápside del VPH y es capaz de generar una respuesta
+                    inmune sin la necesidad de que el virus se replique.
+                    Cuando la vacuna se administra (Vía intramuscular), las proteínas L1 entran en
+                    contacto con las células del sistema inmune, específicamente con las células
+                    presentadoras de antígenos (Macrófagos, células dendríticas y células B). Estas
+                    células procesan las proteínas y las presentan a otras células inmunitarias, como los
+                    linfocitos T y linfocitos B.
+                </p>
+            </div>
+        </div>
+        <div class="container img-vacunas d-flex justify-content-center flex-wrap mt-4">
+            <img src="../assets/vacunaVPH.jpg" alt="Vacuna VPH">
+            <img src="../assets/vacunaL1.jpg" alt="Vacuna L1" class="vacunal1">
+        </div>
+        <div class="card text-dark card-tipos mt-4">
+            <div class="card-body">
+                <p class="card-text">Una vez que los linfocitos B reconocen las proteínas L1, comienzan a generar
+                    anticuerpos específicos contra esos antígenos del VPH. Estos anticuerpos
+                    permanecerán en el cuerpo para reconocer y neutralizar al virus en caso de que una
+                    persona esté expuesta al VPH en el futuro, luego los Linfocitos T ayudan a eliminar
+                    las células infectadas y a coordinar la respuesta inmune.
+                    Tras la vacunación, el sistema inmune genera una memoria inmunológica. Esto
+                    significa que, si la persona es expuesta al VPH en el futuro, su sistema inmunológico
+                    será capaz de reconocer rápidamente el virus y responder con una defensa más
+                    rápida y efectiva Las vacunas actuales contra el VPH (bivalentes, tetravalentes y
+                    nonavalentes) han demostrado ser altamente efectivas para proporcionar protección
+                    a largo plazo contra los tipos de VPH de alto riesgo (tipos 16 y 18) y los de bajo riesgo
+                    (los tipos 6 y 11). La protección generalmente dura más de 10 años, aunque la
+                    duración exacta depende según la persona y el tipo de vacuna aplicada en el paciente
+                </p>
+            </div>
+        </div>
+        <div class="container mt-4">
+            <h5 class="text-center text-white card-Title"><b>Video complementario</b></h5>
+            <div class="video-container text-center">
+                <video controls width="600" height="400">
+                    <source src="../assets/vacunavph.mp4" type="video/mp4">
+                    Tu navegador no soporta la etiqueta de video.
+                </video>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-4" id="impacto">
+        <h5 class="text-center text-white card-Title"><b>Impacto en la salud pública</b></h5>
+        <div class="card text-dark card-tipos mt-4">
+            <div class="card-body">
+                <p class="card-text">El VPH es la infección de transmisión sexual más común en el mundo. Se estima que
+                    más del 80% de las personas sexualmente activas se infectarán con VPH en algún
+                    momento de su vida.
+                    Aunque muchas personas eliminan el virus de forma natural, el VPH de alto riesgo
+                    puede persistir y causar complicaciones graves como el cáncer, lo que conlleva a la
+                    importancia que tiene la prevención y la detección temprana del VPH.
+                </p>
+            </div>
+        </div>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>

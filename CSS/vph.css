@@ -42,6 +42,7 @@
     font-weight: bold;
     transition: color 0.3s ease, transform 0.3s ease;
     position: relative;
+    font-size: 13px;
 }
 /* Efecto de subrayado al pasar el mouse */
 .navbar-nav .nav-link::after {
@@ -85,16 +86,35 @@ body{
     cursor: pointer;
 }
 
-.card-antecedentes,.card-tipos,.card-ciclo{
+.card-antecedentes,.card-tipos,.card-tipos2,.card-ciclo{
     border-radius: 10px;
     background: linear-gradient(to bottom, #f0f0f0, #f0f0f0);
     transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
 }
 
-.card-antecedentes:hover,.card-tipos:hover,.card-ciclo:hover {
+.card-antecedentes:hover,.card-tipos:hover,.card-tipos2:hover,.card-ciclo:hover {
     transform: scale(1.05);
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
     background: linear-gradient(to bottom, rgb(150, 150, 255), rgb(200, 150, 255));
+}
+
+.card-tipos2 {
+    height: 400px; /* Altura fija para todas las tarjetas */
+    max-width: 800px; /* Ancho máximo */
+    margin: 0 auto; /* Centra las tarjetas */
+    padding: 20px; /* Espaciado interno */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra opcional */
+    overflow: hidden; /* Oculta contenido que exceda el tamaño */
+    display: flex; /* Activa Flexbox */
+    flex-direction: column; /* Asegura que el contenido esté alineado verticalmente */
+    justify-content: space-between; /* Distribuye el contenido */
+}
+
+.card-tipos2 .card-body {
+    overflow: auto; /* Agrega scroll si el contenido excede el espacio disponible */
+    flex: 1; /* Permite que el cuerpo de la tarjeta ocupe el espacio disponible */
+    text-align: justify; /* Justifica el texto */
 }
 
 .container-img,.container-img-est{
@@ -162,10 +182,21 @@ body{
 }
 
 .carousel .card {
-    max-width: 900px; /* Ajusta el ancho máximo de las tarjetas */
-    margin: 0 auto; /* Centra las tarjetas dentro del carrusel */
-    border-radius: 10px; /* Opcional: redondea los bordes */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Opcional: agrega sombra */
+    height: 500px; /* Altura fija para todas las tarjetas */
+    max-width: 900px; /* Ancho máximo */
+    margin: 0 auto; /* Centra las tarjetas */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra opcional */
+    display: flex; /* Activa Flexbox */
+    flex-direction: column; /* Asegura que el contenido esté alineado verticalmente */
+    justify-content: space-between; /* Distribuye el contenido */
+    overflow: hidden; /* Oculta el contenido que exceda el tamaño */
+}
+
+.carousel .card-body {
+    overflow: auto; /* Agrega scroll si el contenido excede el espacio disponible */
+    padding: 15px; /* Espaciado interno */
+    flex: 1; /* Permite que el cuerpo de la tarjeta ocupe el espacio disponible */
 }
 
 .carousel-control-prev-icon,
@@ -182,7 +213,7 @@ body{
 }
 
 .carousel .card-img-top {
-    height: 450px; /* Ajusta la altura de las imágenes */
+    height: 350px; /* Altura fija para las imágenes */
     object-fit: cover; /* Asegura que las imágenes se recorten proporcionalmente */
     border-radius: 10px 10px 0 0; /* Redondea solo la parte superior */
 }
@@ -224,7 +255,161 @@ body{
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Agrega una sombra más pronunciada */
     background: linear-gradient(to bottom, rgb(150, 150, 255), rgb(200, 150, 255));
 }
+
+.cancerVPH .card {
+    height: 450px; /* Altura fija para todas las tarjetas */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cancerVPH .card-img-top {
+    height: 250px; /* Altura fija para las imágenes */
+    object-fit: cover; /* Recorta proporcionalmente las imágenes */
+    border-radius: 10px 10px 0 0; /* Bordes redondeados solo en la parte superior */
+}
+
+
+.tratamientoVPH img {
+    width: 100%; /* Asegura que las imágenes ocupen todo el ancho del contenedor */
+    max-width: 500px; /* Establece un ancho máximo para las imágenes */
+    height: 250px; /* Establece una altura fija */
+    object-fit: cover; /* Recorta proporcionalmente las imágenes para que se ajusten al contenedor */
+    border-radius: 10px; /* Opcional: bordes redondeados */
+    display: block; /* Asegura que las imágenes se comporten como bloques */
+    margin: 0 auto; /* Centra las imágenes horizontalmente */
+}
+
+.img-vacunas {
+    display: flex; /* Activa Flexbox */
+    justify-content: center; /* Centra las imágenes horizontalmente */
+    align-items: center; /* Alinea las imágenes verticalmente */
+    gap: 40px; /* Espacio entre las imágenes */
+    flex-wrap: wrap; /* Permite que las imágenes se ajusten en varias filas si no caben */
+}
+
+.vacunal1 {
+    transition: transform 0.3s ease; /* Transición suave para la animación */
+}
+
+.vacunal1:hover {
+    transform: scale(1.1); /* Aumenta el tamaño al 110% cuando el mouse pasa por encima */
+}
+
+.img-vacunas img {
+    width: 575px; /* Ancho fijo para todas las imágenes */
+    height: 300px; /* Altura fija para todas las imágenes */
+    object-fit: cover; /* Recorta proporcionalmente las imágenes para que se ajusten al contenedor */
+    border-radius: 10px; /* Bordes redondeados opcionales */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra opcional */
+}
+
+.video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.video-container video {
+    max-width: 100%; /* Asegura que el video no exceda el ancho del contenedor */
+    height: auto; /* Mantiene la proporción del video */
+}
+
+video {
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra opcional */
+}
+
 /*Medias query para responsive*/
+
+@media (max-width: 630px) {
+    .video-container video {
+        max-width: 100%; /* Reduce el ancho del video al 90% del contenedor */
+        height: auto; /* Mantiene la proporción del video */
+        margin: 0 auto; /* Centra el video horizontalmente */
+    }
+}
+
+@media (max-width: 630px) {
+    .img-vacunas img {
+        max-width: 100%; /* Ajusta el ancho máximo al 90% del contenedor */
+        height: auto; /* Mantiene la proporción de las imágenes */
+        margin: 0 auto; /* Centra las imágenes horizontalmente */
+        display: block; /* Asegura que las imágenes se comporten como bloques */
+    }
+}
+
+@media (max-width: 1200px) {
+    .tratamientoVPH .img-tratamiento {
+        display: flex; /* Activa Flexbox */
+        flex-wrap: wrap; /* Permite que las imágenes se ajusten en varias filas si es necesario */
+        justify-content: center; /* Centra las imágenes horizontalmente */
+        gap: 20px; /* Espacio entre las imágenes */
+    }
+
+    .tratamientoVPH .img-tratamiento img {
+        max-width: 500px; /* Ajusta el tamaño máximo de las imágenes */
+        height: auto; /* Mantiene la proporción de las imágenes */
+    }
+}
+
+/* Para pantallas de 992px o menos */
+@media (max-width: 992px) {
+    .tratamientoVPH .img-tratamiento {
+        flex-direction: column; /* Cambia la dirección a columna (vertical) */
+        align-items: center; /* Centra las imágenes horizontalmente */
+        gap: 20px; /* Espacio entre las imágenes */
+    }
+
+    .tratamientoVPH .img-tratamiento img {
+        max-width: 100%; /* Las imágenes ocuparán el 100% del ancho */
+        height: auto; /* Mantiene la proporción de las imágenes */
+    }
+}
+
+@media (max-width: 768px) {
+    .tratamientoVPH img {
+        max-width: 300px; /* Reduce el tamaño máximo en pantallas pequeñas */
+        height: 200px; /* Ajusta la altura proporcionalmente */
+    }
+}
+
+@media (max-width: 1200px) {
+    .cancerVPH .card {
+        height: 400px; /* Altura fija para todas las tarjetas */
+    }
+    .cancerVPH .card-img-top {
+        height: 150px; /* Altura fija para las imágenes */
+    }
+}
+
+@media (max-width: 992px) {
+    .cancerVPH .card {
+        height: 450px; /* Altura fija para todas las tarjetas */
+    }
+    .cancerVPH .card-img-top {
+        height: 150px; /* Altura fija para las imágenes */
+    }
+}
+
+@media (max-width: 775px) {
+    .cancerVPH .card {
+        margin-bottom: 20px; /* Agrega separación entre las tarjetas */
+    }
+
+    .cancerVPH .card-img-top {
+        height: 200px; /* Mantén un tamaño fijo para las imágenes */
+        object-fit: contain; /* Asegura que las imágenes se ajusten sin recortarse */
+    }
+
+    .cancerVPH .row {
+        gap: 20px; /* Agrega espacio entre las columnas */
+    }
+}
 
 @media (max-width: 992px) {
     .cards-diagnosticos .card {
@@ -250,6 +435,7 @@ body{
 @media (max-width: 768px) {
     .carousel .card {
         max-width: 100%; /* Reduce el ancho de las tarjetas */
+        height: 450px;
         margin: 0 auto; /* Centra las tarjetas */
     }
 
